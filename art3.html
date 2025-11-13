@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CJs Game Exhibit</title>
+  <style>
+    :root {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+      line-height: 1.5;
+    }
+    body {
+      max-width: 1000px;
+      margin: 36px auto;
+      padding: 0 16px;
+      color: #111;
+      background-color: #f9f9f9;
+    }
+    header {
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(1.4rem, 2.6vw, 2rem);
+      margin: 0;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .content {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    figure {
+      margin: 0;
+      flex: 1 1 40%;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    figcaption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 6px;
+    }
+    .text-content {
+      flex: 1 1 55%;
+    }
+    p {
+      margin: 0 0 12px 0;
+      text-indent: 40px;
+    }
+    .photo-wrap {
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      padding: 8px;
+      border-radius: 10px;
+      background: #fff;
+    }
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 18px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Characterizing Femininity</h1>
+  </header>
+
+  <!-- Photo next to text -->
+  <section class="content">
+    <figure class="photo-wrap">
+      <img src="art3.png" alt="A descriptive alt text">
+      <figcaption>Photo of Princess Zelda saying "Link, be careful out there! I know you can save Hyrule!" </figcaption>
+    </figure>
+
+    <div class="text-content">
+      <h2>His Cheerleader</h2>
+      <p>
+        This artifact chosen shows Princess Zelda saying to Link, “Link, be careful out there! I know you can save Hyrule!” This is a touching scene where Princess Zelda is now in a safe location and must bid her saviour good bye before his long and arduous journey. Through this artifact, we can find another common female character archetype in Princess Zelda: the cheerleader. The cheerleader is a female character who worries for the player and encourages the playable character to do their best. This gives players feelings of motivation which entices them into playing more of the game. It boosts egos and gaming spirits. 
+
+      </p>
+      <p>
+        As previously mentioned, female characters are often inserted to influence the plot. This artifact demonstrates Zelda influencing the plot. After pulling the player into coming to her rescue, Zelda now pushes the player to continue more of the game. By telling the player to save Hyrule, she is telling the player to complete the game. This is effective for young boys because the princess who was recently saved by them is now encouraging them to save an entire kingdom. The princess is putting her faith in Link. This makes the player not want to let her down. After all, who wouldn’t want a princess to cheer them on? 
+
+      </p>
+
+
+      <button type="button" onclick="gotointro()">Previous</button>
+
+      <button type="button" onclick="gotoart1()">Next</button>
+
+        <script>
+            function gotointro(){
+                window.location.replace("/art2.html");
+            }
+            
+            function gotoart1(){
+                window.location.replace("/art4.html");
+            }
+            
+        </script>      
+
+    </div>
+  </section>
+
+  <footer style="margin-top:28px;padding-top:12px;border-top:1px solid #eee;color:#666;font-size:0.9rem;">
+    <span id="year"></span> Clara Tan | CCT382
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

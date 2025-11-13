@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CJs Game Exhibit</title>
+  <style>
+    :root {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+      line-height: 1.5;
+    }
+    body {
+      max-width: 1000px;
+      margin: 36px auto;
+      padding: 0 16px;
+      color: #111;
+      background-color: #f9f9f9;
+    }
+    header {
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(1.4rem, 2.6vw, 2rem);
+      margin: 0;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .content {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    figure {
+      margin: 0;
+      flex: 1 1 40%;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    figcaption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 6px;
+    }
+    .text-content {
+      flex: 1 1 55%;
+    }
+    p {
+      margin: 0 0 12px 0;
+      text-indent: 40px;
+    }
+    .photo-wrap {
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      padding: 8px;
+      border-radius: 10px;
+      background: #fff;
+    }
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 18px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+        .works-cited {
+      margin-top: 36px;
+      padding-top: 16px;
+      border-top: 1px solid #ddd;
+    }
+    .works-cited h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .works-cited ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .works-cited li {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+      text-indent: -0.5in; /* hanging indent */
+      padding-left: 0.5in; /* aligns rest of line */
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Characterizing Femininity</h1>
+  </header>
+
+  <!-- Photo next to text -->
+  <section class="content">
+    <figure class="photo-wrap">
+      <img src="art2pic.png" alt="A descriptive alt text">
+      <figcaption>Princess Zelda saying "Let's get out of here before the wizard notices. I know a secret path"</figcaption>
+    </figure>
+
+    <div class="text-content">
+      <h2>The Ultimate Support</h2>
+      <p>
+	Princess Zelda has another archetypal female role: the support. She plays the role of aiding the hero. After being freed from the dungeon by Link, Princess Zelda says, “Let's get out of here before the wizard notices. I know a secret path”. Link is then able to find his way out using the map. Zelda plays the role of an occasionally “active participant by giving assistance to Link’s quest in the form of opening doors, providing helpful items, and giving hints.” (Curtis, 2015). After being rescued by Link, her job is to serve the player. 
+
+      </p>
+      <p>
+Many video games have followed closely to traditional gendered norms, whether directly or indirectly (Drenten et al., 2019). In the same way that women played the role of a helper to men in the 20th century and before, Zelda plays the role of a support character to Link. She is a tool to help the player when they are stuck or are in need of help. Players receive the message that female characters are only there to serve and help, and not to act as in-depth characters. Despite her name being the title of the game, Zelda only plays a side character. 
+
+      </p>
+
+
+      <button type="button" onclick="gotointro()">Previous</button>
+
+      <button type="button" onclick="gotoart1()">Next</button>
+
+
+
+        <script>
+
+            function gotointro(){
+                window.location.replace("/art1.html");
+            }
+            
+            function gotoart1(){
+                window.location.replace("/art3.html");
+            }
+            
+        </script>      
+
+    </div>
+  </section>
+
+    <section class="works-cited">
+    <h3>Works Cited</h3>
+    <ul>
+      <!-- Add more citations here -->
+       <li>Erica, Curtis. “In the Game of Patriarchy: The Damsel in Distress Narrative in Video Games - ProQuest.” <i>Proquest.com</i>, 2015,     www.proquest.com/docview/1733241319?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses, https://doi.org/%22,. Accessed 12 Nov. 2025.
+       </li>
+       <li>Drenten, Jenna, et al. <i>Video Gaming as a Gendered Pursuit Video Gaming as a Gendered Pursuit</i>. 2019.</li>
+      </ul>
+  </section>
+
+
+  <footer style="margin-top:28px;padding-top:12px;border-top:1px solid #eee;color:#666;font-size:0.9rem;">
+    <span id="year"></span> Clara Tan | CCT382
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

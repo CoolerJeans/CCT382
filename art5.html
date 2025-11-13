@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CJs Game Exhibit</title>
+  <style>
+    :root {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+      line-height: 1.5;
+    }
+    body {
+      max-width: 1000px;
+      margin: 36px auto;
+      padding: 0 16px;
+      color: #111;
+      background-color: #f9f9f9;
+    }
+    header {
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(1.4rem, 2.6vw, 2rem);
+      margin: 0;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .content {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    figure {
+      margin: 0;
+      flex: 1 1 40%;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    figcaption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 6px;
+    }
+    .text-content {
+      flex: 1 1 55%;
+    }
+    p {
+      margin: 0 0 12px 0;
+      text-indent: 40px;
+    }
+    .photo-wrap {
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      padding: 8px;
+      border-radius: 10px;
+      background: #fff;
+    }
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 18px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Characterizing Femininity</h1>
+  </header>
+
+  <!-- Photo next to text -->
+  <section class="content">
+    <figure class="photo-wrap">
+      <img src="art5.png" alt="A descriptive alt text">
+      <figcaption>Snippet from the instructions manual</figcaption>
+    </figure>
+
+    <div class="text-content">
+      <h2>Be a Hero!</h2>
+      <p>
+	This artifact is a snippet from the instruction manual for the Nintendo Donkey Kong game released in 1981. As described in the previous artifact, Mario must save his girlfriend from Donkey Kong. This snippet refers to the maiden as “Mario’s girlfriend”, in fact, the word “girlfriend” is her sole title and is used three times. This snippet makes use of this female character for one purpose: to be the damsel in distress in need of saving. This is enticing to players because it pushes the role of hero onto them. Saving the weak female is a prevalent trope but why is it so popular? The damsel in distress is a common archetype because it works effectively on young boys. By having a beautiful female character in front of them in need of saving, it entices the player to help her, making them the hero of the story. The snippet furthermore says “Be a chum, Be a hero. Help Mario save his girlfriend”. This endorses the feeling of dependencies that the game gives the player. The maiden is dependent on the player saving her. 
+      </p>
+      <p>
+
+      </p>
+
+
+      <button type="button" onclick="gotointro()">Previous</button>
+
+      <button type="button" onclick="gotoart1()">Next</button>
+
+        <script>
+            function gotointro(){
+                window.location.replace("/art4.html");
+            }
+            
+            function gotoart1(){
+                window.location.replace("/art6.html");
+            }
+            
+        </script>      
+
+    </div>
+  </section>
+
+  <footer style="margin-top:28px;padding-top:12px;border-top:1px solid #eee;color:#666;font-size:0.9rem;">
+    <span id="year"></span> Clara Tan | CCT382
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
